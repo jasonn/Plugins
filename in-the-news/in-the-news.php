@@ -65,9 +65,9 @@ class InTheNews extends WP_Widget {
     			  ?>
 
         		<li>
-        			<h4><?php echo $prefix; ?> <a href="<?php news_link(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
+        			<strong><?php echo $prefix; ?></strong> <a href="<?php news_link(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
         			<?php if ( $instance['show_date'] ) : ?>
-        			  <span class="post-date"><?php the_time($instance['date_format']); ?></span>
+        			  - <span class="post-date"><?php the_time($instance['date_format']); ?></span>
         			<?php endif; ?>
         		</li>
 
